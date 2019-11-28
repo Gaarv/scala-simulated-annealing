@@ -1,4 +1,4 @@
-package io.gaarv.model
+package io.gaarv.sa.model
 
 trait Problem[S <: Solution] {
 

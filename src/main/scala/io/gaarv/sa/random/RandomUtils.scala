@@ -1,4 +1,4 @@
-package io.gaarv.random
+package io.gaarv.sa.random
 
 import scala.collection.mutable
 import scala.util.Random

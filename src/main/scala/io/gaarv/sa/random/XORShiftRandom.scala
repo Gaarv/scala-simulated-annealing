@@ -1,4 +1,4 @@
-package io.gaarv.random
+package io.gaarv.sa.random
 
 import java.nio.ByteBuffer
 import java.util.{ Random => JavaRandom }

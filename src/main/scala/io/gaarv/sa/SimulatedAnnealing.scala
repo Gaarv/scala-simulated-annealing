@@ -1,10 +1,9 @@
-package io.gaarv.algorithm
+package io.gaarv.sa
 
 import java.lang.Math.exp
 
-import io.gaarv.Logging
-import io.gaarv.model.{Problem, Solution}
-import io.gaarv.random.XORShiftRandom
+import io.gaarv.sa.model.{ Problem, Solution }
+import io.gaarv.sa.random.XORShiftRandom
 
 import scala.annotation.tailrec
 import scala.concurrent.duration.Duration

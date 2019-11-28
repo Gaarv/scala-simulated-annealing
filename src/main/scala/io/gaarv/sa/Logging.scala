@@ -1,4 +1,4 @@
-package io.gaarv
+package io.gaarv.sa
 
 import com.typesafe.scalalogging.Logger
 

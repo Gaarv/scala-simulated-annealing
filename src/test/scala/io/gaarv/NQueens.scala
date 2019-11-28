@@ -1,8 +1,8 @@
 package io.gaarv
 
-import io.gaarv.model.{ Problem, Solution }
-import io.gaarv.algorithm.SimulatedAnnealing
-import io.gaarv.random.RandomUtils._
+import io.gaarv.sa.SimulatedAnnealing
+import io.gaarv.sa.model.{ Problem, Solution }
+import io.gaarv.sa.random.RandomUtils._
 import org.scalatest.{ Matchers, WordSpec }
 
 import scala.concurrent.duration._
@@ -76,7 +76,7 @@ class NQueens extends WordSpec with Matchers {
       coolingRate = 0.97,
       schedule = 1,
       absoluteTemperature = 1,
-      maxDuration = 1.second
+      maxDuration = 5.seconds
     )
     val best = sa.search(Problem, randomBoard)
     NQueenGame showBoard best.queens
