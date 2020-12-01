@@ -5,7 +5,7 @@ lazy val root = (project in file(".")).settings(
   description := "scala-simulated-annealing",
   organization := "io.gaarv",
   version := "0.1",
-  scalaVersion := "2.13.1",
+  scalaVersion := "2.13.4",
   libraryDependencies += scalaLogging,
   libraryDependencies += scalaTest % Test
 )
