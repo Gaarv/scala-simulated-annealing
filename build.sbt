@@ -7,7 +7,7 @@ version      := "1.0.0-SNAPSHOT"
 scalaVersion := "2.12.12"
 githubOwner := "gaarv"
 githubRepository := "scala-simulated-annealing"
-githubTokenSource := TokenSource.GitConfig("github.token")
+githubTokenSource := TokenSource.Environment("GITHUB_TOKEN") || TokenSource.GitConfig("github.token")
 
 
 lazy val root = (project in file(".")).settings(
